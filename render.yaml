@@ -1,0 +1,15 @@
+# Render Blueprint for the MiraFlores workpaper demo.
+# Usage: push this project folder to a GitHub/GitLab repo, then in Render
+# choose New -> Blueprint and select that repo. Render reads this file and
+# creates the free Docker web service below; no other settings are needed.
+# The app image is built from app/Dockerfile with the project root as the
+# Docker context (the Dockerfile copies the packet JSON from the root).
+services:
+  - type: web
+    name: miraflores-workpaper
+    runtime: docker
+    plan: free
+    dockerfilePath: ./app/Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/meta
+    autoDeploy: true

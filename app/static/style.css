@@ -1,0 +1,28 @@
+body { font-family: system-ui, sans-serif; margin: 1rem 2rem; color: #1c2333; }
+header h1 { font-size: 1.3rem; margin-bottom: .3rem; }
+.tag { background: #ffe9a8; border-radius: 4px; padding: 0 .4rem; font-size: .75rem; }
+.controls { display: flex; gap: 1rem; flex-wrap: wrap; }
+.muted { color: #667; font-size: .85rem; }
+nav { margin: .8rem 0; display: flex; gap: .4rem; flex-wrap: wrap; }
+nav button { padding: .35rem .7rem; border: 1px solid #bbb; background: #f4f4f6; border-radius: 6px; cursor: pointer; }
+nav button.active { background: #1c4fd6; color: #fff; border-color: #1c4fd6; }
+table { border-collapse: collapse; margin: .5rem 0 1rem; }
+th, td { border: 1px solid #ddd; padding: .3rem .55rem; text-align: left; font-size: .9rem; }
+th { background: #f0f2f7; }
+.cols { display: grid; grid-template-columns: 1fr 1.2fr; gap: 1rem; align-items: start; }
+.list { max-height: 70vh; overflow: auto; }
+.list button { display: block; width: 100%; text-align: left; border: none; border-bottom: 1px solid #eee; background: none; padding: .3rem; cursor: pointer; font: inherit; font-size: .88rem; }
+.list button:hover { background: #eef3ff; }
+.detail { border: 1px solid #ddd; border-radius: 8px; padding: .8rem; }
+.card { border: 1px solid #ddd; border-radius: 8px; padding: .8rem; margin: .6rem 0; }
+.warn { border-left: 4px solid #e0a800; }
+.info { border-left: 4px solid #7aa2ff; }
+code { background: #f0f0f3; padding: 0 .25rem; border-radius: 3px; }
+.hl { background: #fff3a0; padding: .1rem .25rem; border-radius: 3px; }
+input, select, textarea { padding: .3rem; margin: .15rem 0; }
+textarea { width: 100%; min-height: 3rem; }
+.docpage { white-space: pre-wrap; background: #fbfbf7; border: 1px solid #e5e2d0; padding: .6rem; font-size: .88rem; }
+.docwrap { position: relative; margin: .4rem 0; }
+.docwrap .docpage { margin: 0; min-height: 6rem; }
+.hlbox { position: absolute; border: 2px solid #e0245e; background: rgba(255, 213, 79, .45); border-radius: 3px; pointer-events: none; min-width: 2.5rem; min-height: 1rem; }
+.err { color: #b00020; }

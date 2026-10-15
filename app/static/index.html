@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MiraFlores Workpaper — Okafor-Lindqvist 2025</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1>MiraFlores Workpaper <span class="tag">case study</span></h1>
+  <div class="controls">
+    <label>Acting as
+      <select id="roleSwitcher"></select>
+    </label>
+    <label>Return version
+      <select id="versionSelect"></select>
+    </label>
+  </div>
+  <p id="metaLine" class="muted"></p>
+  <p id="roleNote" class="muted"></p>
+</header>
+
+<nav>
+  <button data-tab="summary" class="active">Summary</button>
+  <button data-tab="lines">Lines &amp; trace</button>
+  <button data-tab="documents">Documents</button>
+  <button data-tab="checks">Checks</button>
+  <button data-tab="versions">Versions</button>
+  <button data-tab="whatifs">What-ifs</button>
+  <button data-tab="timeline">Timeline</button>
+  <button data-tab="review">Review (notes / sign-offs)</button>
+</nav>
+
+<main>
+  <section id="tab-summary"></section>
+  <section id="tab-lines" hidden>
+    <div class="row">
+      <input id="lineSearch" type="search" placeholder="Search key or label, e.g. wages or F1040.1a">
+      <select id="lineJurisdiction">
+        <option value="">All jurisdictions</option>
+        <option value="federal">Federal</option>
+        <option value="california">California</option>
+      </select>
+    </div>
+    <div class="cols">
+      <div id="lineList" class="list"></div>
+      <div id="lineTrace" class="detail"><p class="muted">Select a line to see its provenance trace: line → inputs → extracted values → source document.</p></div>
+    </div>
+  </section>
+  <section id="tab-documents" hidden><div id="docList"></div><div id="docDetail"></div></section>
+  <section id="tab-checks" hidden></section>
+  <section id="tab-versions" hidden></section>
+  <section id="tab-whatifs" hidden></section>
+  <section id="tab-timeline" hidden></section>
+  <section id="tab-review" hidden></section>
+</main>
+
+<footer class="muted">
+  MiraFlores AI Engineer (Tax) case study. Packet data is read-only;
+  notes / sign-offs / adjustments are stored separately. Permissions are enforced server-side;
+  sensitive-data views are logged. All people and numbers are fictional.
+</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>
